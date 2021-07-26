@@ -18,25 +18,9 @@ $(Document).ready(function() {
         //  initialSlide: 1,
         pauseOnFocus: true,
         pauseOnHover: true,
+        fade: true,
+        cssEase: 'linear'
 
-        // customPaging: function (slider, i) {
-        //   var current = i + 1;
-        //   current = current < 10 ? "" + current : current;
-
-        //   var total = slider.slideCount;
-        //   total = total < 10 ? "" + total : total;
-
-        //   return (
-        //     '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
-        // 		<span class="slick-dots-current">' +
-        //     current +
-        //     '</span>\
-        // 		<span class="slick-dots-separator">из</span>\
-        // 		<span class="slick-dots-total">' +
-        //     total +
-        //     "</span></button>"
-        //   );
-        // },
     });
     $(".slider-js-2")
         .slick({

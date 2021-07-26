@@ -2,32 +2,27 @@
 header.header
       .container
         .header__body
-          a(href="#!").header__logo
-            img(src="assets/img/clock.svg",alt="img")
+          a(href="#!").header__logo.imgs
+            img(src="assets/img/logo.png",alt="img")
           nav.header__menu.menu
             i.icon-close2.header__close
             ul.menu__list
               li.menu__item
-                  a.menu__link(href="#bunner") top
+                  a.menu__link(href="#bunner") Верх
               - 
                       items = [
-                          { title: "today", url: "#today"},
-                          { title: "history", url: "#history"},
-                          { title: "mission", url: "#mission"},
-                          //- { title: "Компания", url: "#strategy"},
-                          //- { title: "Компания", url: "#values"},
-                          //- { title: "Компания", url: "#manifest"},
-                          //- { title: "Компания", url: "#team"},
+                          { title: "О нас", url: "#today"},
+                          { title: "Наши услуги", url: "#history"},
+                          { title: "Наши работы", url: "#mission"},
+                          { title: "Контакты", url: "#contacts"},
                         ]
               each item in items
                 li.menu__item
                   a.menu__link(href=item.url)=item.title
           .header__info.info
-              a.info_phone(href='#!') +7(000) 123 45 65
-              form.info_search
-                input(type='text' placeholder='Поиск')
-                i.icon-Vector
-                input(type='submit')
+              a.info_phone(href='#!') 
+                i.icon-phone
+                span +3(000) 123 45 65
           i.icon-menu1.header__burger
 
 //- вариант баннера без слайдера---------------
@@ -54,15 +49,18 @@ section.first#first
                 li.slider__item.slider-card
                     .slider-card__img.imgs
                             picture
-                              source(srcset="assets/img/paralax.jpg, assets/img/paralax@2.jpg 2x,  assets/img/paralax@3.jpg 3x,"  type="image/jpg"  media="(min-width: 1200px)")
-                              source(srcset="assets/img/img-2.png" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                              source(srcset="assets/img/img-2.png"  type="image/jpg"  media="(min-width: 1200px)")
+                              source(srcset="assets/img/paralax.jpg" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
                               source(srcset="assets/img/busic.gif" type="image/gif"  media="(max-width: 999px)")
                               img(src='assets/img/card/img-2.png'    alt='img')
                     .slider-card__body
                       .slider-card__title 
-                        h2 Блог о компании
-                      .slider-card__text  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      a(href="").btn.btn--success.slider-card__button  Explore More
+                        h2 Утепление фасадов в Мариуполе
+                      .slider-card__text  
+                        p Сертифицированные альпинисты - высотники
+                        p Лучшие материалы с ✓гарантией качества
+                        p Доступная цена 2021 года - от 300 грн. за 1 м² 
+                      a(href="").btn.btn--success.slider-card__button  Узнайте больше
                 li.slider__item.slider-card
                     .slider-card__img.imgs
                             picture
@@ -71,8 +69,11 @@ section.first#first
                               source(srcset="assets/img/busic.gif" type="image/gif"  media="(max-width: 999px)")
                               img(src='assets/img/img-2.png', alt='img')
                     .slider-card__body
-                      .slider-card__title
-                        h2 Блог о компании
-                      .slider-card__text  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      a(href="#!").btn.btn--success.slider-card__button  Take the Tour
+                      .slider-card__title 
+                        h2 Утепление фасадов в Мариуполе
+                      .slider-card__text  
+                        p Сертифицированные альпинисты - высотники
+                        p Лучшие материалы с ✓гарантией качества
+                        p Доступная цена 2021 года - от 300 грн. за 1 м² 
+                      a(href="").btn.btn--success.slider-card__button  Узнайте больше
 
