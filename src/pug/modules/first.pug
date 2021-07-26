@@ -5,13 +5,13 @@ header.header
           a(href="#!").header__logo.imgs
             img(src="assets/img/logo.png",alt="img")
           nav.header__menu.menu
-            i.icon-close2.header__close
+            i.icon-close21.header__close
             ul.menu__list
               li.menu__item
                   a.menu__link(href="#bunner") Верх
               - 
                       items = [
-                          { title: "О нас", url: "#today"},
+                          { title: "О нас", url: "#about"},
                           { title: "Наши услуги", url: "#history"},
                           { title: "Наши работы", url: "#mission"},
                           { title: "Контакты", url: "#contacts"},
@@ -43,37 +43,41 @@ header.header
 
   //- вариант баннера со слайдером-----------------
 section.first#first
-  .bunner-slider#bunner
+   
+    .bunner-slider#bunner
           .slider
             ul.slider__slider.slider__body.slider-js-1
                 li.slider__item.slider-card
                     .slider-card__img.imgs
                             picture
-                              source(srcset="assets/img/img-2.png"  type="image/jpg"  media="(min-width: 1200px)")
-                              source(srcset="assets/img/paralax.jpg" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
-                              source(srcset="assets/img/busic.gif" type="image/gif"  media="(max-width: 999px)")
-                              img(src='assets/img/card/img-2.png'    alt='img')
-                    .slider-card__body
-                      .slider-card__title 
-                        h2 Утепление фасадов в Мариуполе
-                      .slider-card__text  
-                        p Сертифицированные альпинисты - высотники
-                        p Лучшие материалы с ✓гарантией качества
-                        p Доступная цена 2021 года - от 300 грн. за 1 м² 
-                      a(href="").btn.btn--success.slider-card__button  Узнайте больше
+                              source(srcset="assets/img/png/bunner.png"  type="image/png"  media="(min-width: 1200px)")
+                              source(srcset="assets/img/png/bunner.png" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                              source(srcset="assets/img/png/bunner.png" type="image/png"  media="(max-width: 999px)")
+                              img(src='assets/img/bunner-1.png', alt='img')
+                    .container
+                        .slider-card__body
+                          .slider-card__title 
+                            h2._pt Утепление квартир и домов
+                          .slider-card__text  
+                            p Мы на рынке Украины уже более 10 лет 
+                            p Всегда работаем только с качественными материалами и готовы взяться даже за самый сложный объект
+                            p Будем рады воплотить Ваши мечты и сделать Ваше жилье самым красивым
+                          a(href="").btn.btn--success.slider-card__button  Заказать услугу
                 li.slider__item.slider-card
                     .slider-card__img.imgs
                             picture
-                              source(srcset="assets/img/paralax.jpg, assets/img/paralax@2.jpg 2x,  assets/img/paralax@3.jpg 3x,"  type="image/jpg"  media="(min-width: 1200px)")
-                              source(srcset="assets/img/img-2.png" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
-                              source(srcset="assets/img/busic.gif" type="image/gif"  media="(max-width: 999px)")
-                              img(src='assets/img/img-2.png', alt='img')
-                    .slider-card__body
-                      .slider-card__title 
-                        h2 Утепление фасадов в Мариуполе
-                      .slider-card__text  
-                        p Сертифицированные альпинисты - высотники
-                        p Лучшие материалы с ✓гарантией качества
-                        p Доступная цена 2021 года - от 300 грн. за 1 м² 
-                      a(href="").btn.btn--success.slider-card__button  Узнайте больше
+                              source(srcset="assets/img/png/bunner-1.png"  type="image/png"  media="(min-width: 1200px)")
+                              source(srcset="assets/img/png/bunner-1.png" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                              source(srcset="assets/img/png/bunner-1.png" type="image/png"  media="(max-width: 999px)")
+                              img(src='assets/img/bunner-1.png'    alt='img')
+                    .container
+                        .slider-card__body 
+                          .slider-card__title 
+                            h2._pt Утепление фасадов в Мариуполе
+                          .slider-card__text  
+                            p Опытные альпинисты - высотники
+                            p Лучшие материалы с ✓гарантией качества
+                            p Доступная цена 2021 года - от 300 грн. за 1 м² 
+                          a(href="").btn.btn--success.slider-card__button  Заказать услугу
+
 

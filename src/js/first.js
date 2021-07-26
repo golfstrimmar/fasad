@@ -12,7 +12,7 @@ $(document).ready(function (e) {
       .addClass("menu-active")
       .append(
         $(
-          "<div class='header__info info'><a class='info_phone' href='#!'>+7(000) 123 45 65</a><div class='info_search '><input type='text' placeholder='Поиск' /><i class='icon-Vector'></i><input type='submit'  /></div></div>"
+          "<div class='header__info info'><a class='info_phone' href='#!'><p>Наш телефон</p> +399999999999</a></div></div>"
         )
       );
       

@@ -41,6 +41,33 @@ font-stretch: normal;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bx-brush-alt:before {
+  content: "\e92d";
+}
+.icon-trowel:before {
+  content: "\e92e";
+}
+.icon-entrance:before {
+  content: "\e92f";
+}
+.icon-sharp-balcony:before {
+  content: "\e930";
+}
+.icon-classical-building:before {
+  content: "\e931";
+}
+.icon-building-insights-3:before {
+  content: "\e932";
+}
+.icon-telegram1:before {
+  content: "\e905";
+}
+.icon-messenger1:before {
+  content: "\e907";
+}
+.icon-heart-o:before {
+  content: "\e909";
+}
 .icon-linkedin2:before {
   content: "\eaca";
 }
@@ -94,21 +121,9 @@ font-stretch: normal;
 }
 .icon-arrow-2:before {
   content: "\e900";
-  color: #fff;
 }
 .icon-bubble:before {
   content: "\e96b";
-}
-.icon-telegram1:before {
-  content: "\e905";
-  color: #626262;
-}
-.icon-messenger1:before {
-  content: "\e907";
-  color: #626262;
-}
-.icon-heart-o:before {
-  content: "\e909";
 }
 .icon-close21:before {
   content: "\e90e";
@@ -124,11 +139,9 @@ font-stretch: normal;
 }
 .icon-Vector-5:before {
   content: "\e917";
-  color: #90a0b7;
 }
 .icon-more:before {
   content: "\e91a";
-  color: #c2cfe0;
 }
 .icon-user:before {
   content: "\e918";
@@ -198,32 +211,25 @@ font-stretch: normal;
 }
 .icon-meetings-1 .path1:before {
   content: "\e925";
-  color: rgb(196, 196, 196);
 }
 .icon-meetings-1 .path2:before {
   content: "\e926";
   margin-left: -1em;
-  color: rgb(245, 246, 248);
 }
 .icon-Vector:before {
   content: "\e927";
-  color: #c2cfe0;
 }
 .icon-delete:before {
   content: "\e928";
-  color: #c2cfe0;
 }
 .icon-edit:before {
   content: "\e929";
-  color: #90a0b7;
 }
 .icon-attach:before {
   content: "\e92a";
-  color: #90a0b7;
 }
 .icon-emoji:before {
   content: "\e92b";
-  color: #90a0b7;
 }
 .icon-arrow_drop_down1:before {
   content: "\e92c";

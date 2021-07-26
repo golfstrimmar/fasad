@@ -1,0 +1,115 @@
+.services
+
+.services__body
+  +grid(30px)
+  +columns(55% 1fr)
+  +bg(rgba(30,33,38,1))
+  color: white
+.services__img
+  position: absolute
+  width: 100%
+  height: 100%
+  
+.services__title
+  margin: 40px 0 0 0
+.services__text 
+  font-size: 14px
+  margin: 40px 0 0 0
+.services__wrapper
+  +bg(rgba(30,33,38,1)) 
+.services__info
+  padding: 80px 150px 30px 30px
+.services__column
+  position: relative
+.services-info__text
+  margin: 30px 0 0 0
+.services__grid
+  margin: 50px 60px 50px 0px
+  z-index: 4
+  position: relative
+.grid
+  +grid(30px)
+  grid-template-columns:  minmax(35%, 250px) minmax(35%, 250px)
+  gap: 30px
+  justify-content: end
+
+
+.grid__item
+  min-height: 242px
+  border-radius: 5px
+.g-item
+  +bg(white)
+  border-top: 1px solid $active
+  color: #000
+  padding: 30px 20px 30px 20px
+  +fdc
+  transition: all .2s ease-in-out
+  i
+    font-size: 25px
+    display: inline-block
+    margin: 0 auto 15px
+    transition: all .2s ease-in-out
+  &:hover
+    cursor: pointer
+    +bg(lighten($active,20%))
+    color: $active
+    & > i 
+      color: $active
+    & >  .g-item__button
+      opacity: 1
+
+.g-item__title 
+  font-size: 16px
+  font-weight: 700
+  line-height: 1.1
+  +jucc
+.g-item__text
+  font-size: 14px
+  line-height: 1.3
+  margin: 20px 0 0 0
+  align-self: start
+  +pt
+.g-item__button
+  flex-grow: 1
+  margin: 30px 0 0 0
+  +fdc
+  justify-content: flex-end
+  opacity: .3
+  border-radius: 5px
+  transition: all .2s ease-in-out
+  a
+    height: 40px
+    +pt
+    text-transform: uppercase
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .services__grid
+    margin: 50px 100px 50px 0px
+  .grid
+    grid-template-columns:  minmax(35%, 250px) 
+  .services__info 
+    padding: 59px 30px 30px 30px
+  .services-info__text
+    font-size: 14px
+
+
+@media (max-width: 767px)
+
+    .services__body
+      +columns( 1fr)
+
+    .services__grid
+      margin:  0
+      padding: 30px
+    .services__info
+      order: -1
+
+    .grid
+      grid-template-columns:  100%
+      justify-content: center
+      width: 100vw  
+    .services-info__text
+      font-size: 14px
+    .services__info
+      padding: 40px 20px
