@@ -1,15 +1,15 @@
-section#projects.projects
+section#projects.projects.m50 
   .projects__wrapper
     .container
-      .projects__body
-        .projects__column
-          .projects__title.title
+      .projects__title.title
             h2 Наши работы
-              .projects-controls.controls
+      .projects__body
+        .projects__controls.projects-controls.controls
                 button.control(type='button' data-filter='all') Все работы 
                 button.control(type='button' data-filter='.red') Квартиры 
                 button.control(type='button' data-toggle='.green') Фасады домов
                 button.control(type='button' data-toggle='.blue') Балконы
+                button.control(type='button' data-toggle='.aqua') Переходы 
                 button.control(type='button' data-toggle='.pink') Подъезды
         .projects__column
               #Container
@@ -19,6 +19,9 @@ section#projects.projects
                 .mix.green
                 .mix.blue
                 .mix.pink
+                .mix.aqua
+                .mix.blue
+                .mix.aqua
                 .mix.blue
                 .mix.red
                 .mix.pink
