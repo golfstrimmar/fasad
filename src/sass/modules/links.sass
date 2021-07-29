@@ -1,0 +1,54 @@
+.links
+  padding: 30px
+  margin: 50px 0 0 0
+.links__body
+  +grid(100px)  
+  +columns( 40% 1fr)
+  margin: 40px 0 0 0
+.links__map
+  +pro
+  iframe
+    +pro
+
+
+
+
+
+
+
+.links__map
+  margin: 30px 0 0 0
+  height: 300px
+.links__img
+  +jucc
+.links__address
+  img
+    margin: 0 auto 30px
+    display: inline-block
+
+.links__title
+  color: $active
+  p
+    +pt
+    font-size: 16px
+      
+
+
+
+
+@media (min-width: 768px) and (max-width: 999px)
+  .links__body 
+    column-gap: 50px
+    grid-template-columns: 50% 1fr
+
+@media (max-width: 767px)
+  .links
+    padding: 0 0 0 0
+  .links__body
+    grid-template-columns:  1fr
+  .links__address
+    margin: 50px 0 0 0
+    p
+      font-size: 14px
+      line-height: 1.5
+

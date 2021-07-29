@@ -1,14 +1,13 @@
 .footer
-  margin: 100px 0 0 0
+  // margin: 100px 0 0 0
   background: #3B3C3D
   color: white
   padding: 50px 0 20px 0
-  @media (min-width: 0px) and (max-width: 1199px)
-    margin: 6rem 0 0 0
+
 
 .footer__body
-  display: grid
-  grid-template-columns: 31.9% 39.2% 1fr
+  +grid(30px)
+  grid-template-columns:  1fr 1fr 39.2% 1fr
   @media (max-width: 1199px) 
     grid-template-columns:  1fr
   
@@ -35,10 +34,74 @@
     text-decoration: underline
 .footer-item__description
   margin: 14px 0 38px 0
+  +pt
   @media (max-width: 767px) 
     font-size: 1.5rem
 .footer__copyright
   font-size: 10px
   line-height: 12px
   text-align: center
-  margin: -18px 0 0 0
+  margin: -18px 0 20px 0
+  @media (max-width: 767px) 
+    margin: 20px 0 20px 0
+.footer-item__button
+  width: 200px
+  padding: 5px 0
+  border-radius: 5px
+  text-shadow: 0px 0px 4px #000
+  box-shadow: inset 0px 0px 4px #000
+.footer-item__line 
+  input
+    font-size: 14px
+    width: 300px
+    +pt
+    padding: 5px 0 5px 10px
+    +br
+.footer-menu__link
+  color: white
+  +pt
+.footer-menu__soc
+  margin: 20px 0 0 0
+.soc
+  +jucs
+.soc__item
+    margin: 0 8px 0 0
+    i
+      width: 15px
+      height: 15px
+      color: white
+      transition: all .2s ease-in-out
+    &:hover
+      transform: scale(1.1)
+      & > i
+        color: $active
+        
+.footer__menu
+  margin: 20px 0 0 0
+.insta
+  +grid(10px)
+  row-gap: 15px
+  +columns(repeat(auto-fill,100px))
+  margin: 20px 0 0 0
+.insta__item
+  
+.insta-item
+.insta-item__img
+  padding: 0 0 100px 0
+  img
+    +br
+
+.footer-item__line 
+  i
+    color: white
+    margin: 0 10px 0 0
+
+
+
+@media (max-width: 767px)
+  .footer-item__line 
+    input
+      width: 100%
+
+
+

@@ -1,10 +1,10 @@
 *
-  outline: 1px solid green
+  // outline: 1px solid green
   box-sizing: border-box
 
 
 .container
-  outline: 1px solid #4164ff
+  // outline: 1px solid #4164ff
 //------.container--------
 .container
   max-width: 1230px
@@ -26,8 +26,10 @@
 .wrapper
   overflow: hidden
   min-height: 100vh
-
-
+  +background-img("/assets/img/png/20.jpg")
+  background-size: 20%
+  background-position: center
+  background-repeat: repeat
 .bg
   background-repeat: no-repeat
   background-size: cover
@@ -54,6 +56,9 @@ a
 .title
   position: relative
   display: inline-block
+  h2 
+    z-index: 2
+    position: relative
   &:after
     content: ''
     position: absolute
@@ -61,8 +66,14 @@ a
     height: 50px
     top: -20px
     right: -40px
-    border: 3px solid rgba(255,205,0, .4)
-
+    border: 3px solid lighten(rgba(122,205,.4),30%)
+  p
+    font-size: 15px
+    font-family: "PT Sans",sans-serif
+    color: $active
+    font-weight: bold
+    line-height: 1
+    padding: 5px 0 0 0
 
 ._gap
   margin: 50px 0 0 0

@@ -1,0 +1,37 @@
+section#contacts.links
+    .container
+      .links__main-title.title
+          h2 Контактная информация
+      .links__body
+        .links__column
+          .contacts
+              .contacts__wrapper
+                  .contacts__body.catalog__container
+                    form.connect__form
+                      .connect__form-item
+                        input#name(type='text' required='' placeholder=' Denzel Washington')
+                        label(for='name') Укажите Ваше имя 
+                      .connect__form-item
+                        input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+                        label(for='email') Ваш e-mail?
+                      .connect__form-item
+                        textarea#message(type='text' required='' placeholder=' Your awesome         message' cols=' 40' rows='6')
+                        label(for='message') Напишите сообщение здесь
+                      .form__submit-button
+                        input(type='submit' plaseholder="Отправить ")#submit-button.btn.btn--success 
+        .links__address
+            //- .links__img
+            //-   img(src="assets/img/logo.png",alt="img")
+            .links__title
+              h4 Наши телефоны: 
+            p 837 455185
+            p 837 455185
+            .links__title.m20 
+              h4 Наша почта:
+            p google@gmail.com
+            .links__title.m20 
+              h4 Наш адрес:
+            p Украина, Донецкая область ,
+            p г. Мариуполь, б-р. Шевченко 85
+.links__map
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.4940571846173!2d37.55454081581145!3d47.108988330212306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e40d0db2ad73%3A0x2b8cef238442f00!2z0LHRg9C7LiDQqNC10LLRh9C10L3QutC-LCA4NSwg0JzQsNGA0LjRg9C_0L7Qu9GMLCDQlNC-0L3QtdGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA4NzUwMA!5e0!3m2!1sru!2sua!4v1627510886803!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

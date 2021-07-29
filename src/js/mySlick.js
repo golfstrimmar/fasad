@@ -7,7 +7,7 @@ $(Document).ready(function() {
         // dots: true,
         arrows: false,
         slidesToShow: 1,
-        speed: 1500,
+        speed: 3000,
         easing: "ease",
         // cssEase: "linear",
         centerMode: false,

@@ -38,6 +38,7 @@ import './css/slick.css';
 
 
 import './css/fonts.css'
+import './css/phone.css'
 
 
 
