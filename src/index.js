@@ -1,10 +1,17 @@
 import $ from 'jquery';
-import Plyr from "plyr";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init({
+  duration: 1200,
+  easing: 'ease-in-out',
+  anchorPlacement: 'top-bottom',
+  offset: 50,
+});
 // ==============================================
 
 // import "mixitup";
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
+
 
 
 import './js/common'
@@ -13,7 +20,6 @@ import './js/first'
 // import './js/header'
 // import './js/select'
 import './js/start-button'
-
 // import "./js/jquery.nicescroll.min";
 // import "./js/header";
 // import './js/modal'
@@ -43,10 +49,8 @@ import './css/phone.css'
 
 
 
-import './css/plyr.css';
-import './css/mix.css';
-
-
+// import './css/plyr.css';
+// import './css/mix.css';
 
 
 // import './css/main.css';

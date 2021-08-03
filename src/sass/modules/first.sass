@@ -7,7 +7,8 @@
   position: fixed
   width: 100%
   height: 80px
-  +bg(rgba(255,255,255,.8))
+  +bg(rgba(205,141,12,.8))
+  color: white
   display: grid
   align-items: center
   box-shadow:  0px 0px 8px rgba(0,0,0,.3)
@@ -15,11 +16,13 @@
     transition: all .3s easy-in-out
   .container
     height: 80%
-  @media (min-width: 1000px) and (max-width: 1199px)
-    height: 60px
+  // @media (min-width: 1000px) and (max-width: 1199px)
+  //   height: 60px
   @media (max-width: 999px)
     height: 40px
 .info_phone
+  text-shadow: 0px 0px 4px #fff
+  color: white
   @media (max-width: 999px)
     color: white
     text-shadow: 0 0 4px white
@@ -27,7 +30,6 @@
 .responciveHeader
   position: fixed
   width: 100%
-  height: 60px
   +bg(rgba(38,38,38, .9))
   .menu__link
     color: white
@@ -69,8 +71,8 @@
   grid-area: logo
   
   img
-    width: 50px
-    height: 50px
+    width: 87px
+    height: 70px
     top: 50%
     transform: translateY(-50%)
     @media (max-width: 999px)
@@ -140,11 +142,13 @@
   +alic
   height: 100%
   padding: 0 10px
-  font-size: 12px
+  font-size: 15px
   font-weight: 700
   text-transform: uppercase
   max-height: 40px
   border-radius: 50%
+  text-shadow: 0px 0px 4px darken($active, 80%)
+  color: white
   &:hover
     color: white
     +bg(lighten($active,30%))
@@ -188,6 +192,9 @@
 .info_phone
   font-size: 16px
   line-height: 23px
+  border: 3px solid white
+  padding: 5px
+  +br
   i
     margin: 0 5px 0 0
   &:hover
@@ -199,11 +206,11 @@
 
     
 .info__soc
-  margin: 0 20px 0 0
+  margin: 0 -6px 0 0
   .soc__item
     transition: all .2s ease-in-out
     i
-      color: $text
+      color: white
       transition: all .2s ease-in-out
 .responciveHeader
   .info__soc

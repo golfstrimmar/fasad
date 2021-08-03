@@ -42,8 +42,10 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
-    "plyr": "^3.6.3"
+    "plyr": "^3.6.3",
+    "wowjs": "^1.1.3"
   }
 }

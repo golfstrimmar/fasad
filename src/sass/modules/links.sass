@@ -1,6 +1,6 @@
 .links
   padding: 30px
-  margin: 50px 0 0 0
+  margin: 100px 0 0 0
 .links__body
   +grid(100px)  
   +columns( 40% 1fr)
@@ -37,6 +37,8 @@
 
 
 @media (min-width: 768px) and (max-width: 999px)
+  .links
+    margin: 50px 0 0 0
   .links__body 
     column-gap: 50px
     grid-template-columns: 50% 1fr

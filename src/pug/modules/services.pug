@@ -7,7 +7,7 @@ section#services.services
               source(srcset='assets/img/png/service.jpg'  type='image/png'  media='(min-width: 1200px)')
               source(srcset='assets/img/png/service-bg-1200.jpg' type='image/png'  media='(min-width: 0px) and (max-width: 1199px)')
               img(src='assets/img/service.jpg', alt='img')
-          .services__grid.grid
+          .services__grid.grid(data-aos='flip-up')
             .grid__item.g-item
               i.icon-building-insights-3
               .g-item__title Утепление квартир
@@ -44,7 +44,7 @@ section#services.services
               .g-item__text  Для каждого дома фасад является его важной и неотъемлемой частью, требующей постоянного ухода и периодической реконструкции.
               .g-item__button
                 a(href='#!').btn.btn--empty Узнать больше
-        .services__info.services-info
+        .services__info.services-info(data-aos='flip-up')
           .services-info__title.title 
             h2 Наши услуги
             p The Best Construction Company

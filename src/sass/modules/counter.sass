@@ -1,0 +1,29 @@
+.counter
+    background: #31353d
+    padding: 60px 0px
+    // box-shadow: inset 0px 0px 20px $s
+    box-shadow: 1px 1px 78px 4px rgba(78, 19, 232, 0.36) inset
+.counter__inner
+  +grid(0)
+  +columns(repeat(4 ,23%))
+  justify-content: space-between
+  align-items: center
+  
+.counter__item
+    +alic
+    flex-wrap: nowrap
+    color: white
+
+    i
+        font-size: 18px
+        margin: 0 7px 0 0
+    h4
+        font-size: 30px
+        margin: 0 15px 0 0
+        text-shadow: 0px 0px 4px $s
+    h5
+        font-size: 14px
+        text-transform: uppercase
+        +pt
+
+    

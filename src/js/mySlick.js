@@ -12,14 +12,14 @@ $(Document).ready(function() {
         // cssEase: "linear",
         centerMode: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         // centerMode: true,
         infinite: true,
         //  initialSlide: 1,
         pauseOnFocus: true,
         pauseOnHover: true,
-        // fade: true,
-        // cssEase: 'linear'
+        fade: true,
+        cssEase: 'linear'
 
     });
     $(".slider-js-2")
